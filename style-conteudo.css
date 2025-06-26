@@ -1,4 +1,4 @@
-/* DIV das seções que possuem cards */
+/* CSS compartilhado */
 
 .div-section-cities, .div-section-jobs {
     display: flex;
@@ -12,15 +12,13 @@
     max-width: calc(250px * 4 + 50px);
 }
 
-/* Seção Cities */
-
-.section-cities {
+.section-cities, .section-jobs {
     background-color: var(--cor-paragrafo);
     margin: 0px;
     padding: 0px;
 }
 
-.section-cities h2 {
+.section-cities h2, .section-jobs h2 {
     color: var(--cor-fundo-azul-escuro);
 }
 
@@ -31,7 +29,7 @@
     padding: 10px 0px 0px 0px;
 }
 
-.card-cities {
+.card-cities, .card-jobs {
     background-color: var(--cor-fundo-azul-escuro);
 }
 
@@ -50,7 +48,6 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 .card h3 {
     color: var(--cor-titulo);
     font-size: 23px;
@@ -76,18 +73,14 @@
     box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
-/* Seção Jobs */
+/* Section To-do */
 
-.section-jobs {
+.section-to-do {
     background-color: var(--cor-fundo-azul-escuro);
 }
 
-.section-jobs h2 {
-    color: var(--cor-titulo);
-}
-
-.card-jobs {
-    background-color: var(--cor-fundo-azul-claro);
+.section-to-do h2 {
+    color: var(--cor-paragrafo);
 }
 
 /* Interatividade */
