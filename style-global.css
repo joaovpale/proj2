@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo-azul-escuro: #2c3e50;
+    --cor-fundo-azul-claro: #3f5872;
+    --cor-hover-card-azul: #3d5164;
+    --cor-fundo-body: #ecf0f1;
+    --cor-titulo: #ffffff;
+    --cor-paragrafo: #dfe6e9;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: sans-serif;
+    background-color: var(--cor-fundo-body);
+    min-width: 340px;
+    box-sizing: border-box;
+}

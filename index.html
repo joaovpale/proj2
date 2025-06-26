@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page teste</title>
+        <link rel="stylesheet" href="style-global.css">
+        <link rel="stylesheet" href="style-header-footer.css">
+        <link rel="stylesheet" href="styles-conteudo.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="titulo-header">The planner of my life(if i dindn't die before)</h1>
+        </header>
+
+        <main>
+            <section class="section-cities">
+                <h2>Places i wanna live</h2>
+                <div class="div-section-cities">
+                    <div class="card card-cities">
+                        <h3>Norway</h3>
+                        <img src="pics/norway.jpg" alt="Picture of Norway">
+                        <p>The best option probably, based in life quality in general</p>
+                    </div>
+                    <div class="card card-cities">
+                        <h3>Sweden</h3>
+                        <img src="pics/sweden.webp" alt="Picture of Sweden">
+                        <p>Is cold too, and so good as Norway</p>
+                    </div>
+                    <div class="card card-cities">
+                        <h3>Germany / Austria</h3>
+                        <img src="pics/austria.avif" alt="Picture of Austria">
+                        <p>Countrys with focus in equality, good life quality and mountains</p>
+                    </div>
+                    <div class="card card-cities">
+                        <h3>Argentina / Chile</h3>
+                        <img src="pics/argentina.webp" alt="Picture of Argentina">
+                        <p>Far from possible future wars in Europe, yet with a beautiful view</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-to-do">
+                <h2>To-do list:)</h2>
+                <form action="" method="post" autocomplete="on">
+                    <p><label for="idtitulo">Título:</label></p>
+                    <input type="text" name="titulo" id="idtitulo" required maxlength="30" size="30" placeholder="Comprar pão" autocomplete="name">
+
+                    <p><label for="idconteudo">Conteúdo: </label></p>
+                    <input type="text" name="conteudo" id="idconteudo" required size="50">
+
+                    <p><label for="idpreco">Preço:</label></p>
+                    <input type="number" min="0" step="0.5">
+
+                    <input type="time" name="hora" id="idhora">
+
+                    <input type="submit" value="Salvar">
+                    <input type="reset" value="Limpar">
+                </form>
+            </section>
+
+            <section class="section-jobs">
+                <h2>My dreams jobs</h2>
+                <div class="div-section-jobs">
+                    <div class="card card-jobs">
+                        <h3>Dev</h3>
+                        <img src="pics/dev.png" alt="Imagem de um programa usado para programar">
+                        <p>Working from anywhere with home office options</p>
+                    </div>
+                    <div class="card card-jobs">
+                        <h3>Heir</h3>
+                        <img src="pics/vanlife.jpg" alt="Imagem mostrando o interior de um van motorhome e um montanha de fundo">
+                        <p>A totally peaceful life, without any problems</p>
+                    </div>
+                    <div class="card card-jobs">
+                        <h3>Scientist</h3>
+                        <img src="pics/scientist.jpg" alt="Imagem de um cientista trabalhando">
+                        <p>Work with CRISPR, and perhaps using CRISPR in plants, to modify their DNA</p>
+                    </div>
+                    <div class="card card-jobs">
+                        <h3>Youtuber</h3>
+                        <img src="pics/youtuber.webp" alt="Ilustração de um Youtuber">
+                        <p>Make videos about science and technology</p>
+                    </div>
+                </div>
+            </section>
+            <button id="botao-header" onclick="clicouh1()"></button>
+        </main>
+
+        <script src="js/index.js" defer></script>
+    </body>
+</html>

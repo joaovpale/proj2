@@ -1,0 +1,138 @@
+/* DIV das seções que possuem cards */
+
+.div-section-cities, .div-section-jobs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px auto;
+    max-width: calc(250px * 4 + 50px);
+}
+
+/* Seção Cities */
+
+.section-cities {
+    background-color: var(--cor-paragrafo);
+    margin: 0px;
+    padding: 0px;
+}
+
+.section-cities h2 {
+    color: var(--cor-fundo-azul-escuro);
+}
+
+.section-cities h2, .section-jobs h2, .section-to-do h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font: 800 25px sans-serif;
+    padding: 10px 0px 0px 0px;
+}
+
+.card-cities {
+    background-color: var(--cor-fundo-azul-escuro);
+}
+
+/* Configurações globais dos cards */
+
+.card{
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    height: 275px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card h3 {
+    color: var(--cor-titulo);
+    font-size: 23px;
+}
+
+.card p {
+    color: var(--cor-paragrafo);
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin: 15px 0px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.03);
+    background-color: var(--cor-hover-card-azul);
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+/* Seção Jobs */
+
+.section-jobs {
+    background-color: var(--cor-fundo-azul-escuro);
+}
+
+.section-jobs h2 {
+    color: var(--cor-titulo);
+}
+
+.card-jobs {
+    background-color: var(--cor-fundo-azul-claro);
+}
+
+/* Interatividade */
+
+@media (max-width: 650px) {
+    .card {
+        width: calc(50% - 5px);
+        height: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        padding: 20px 0px;
+    }   
+    
+    .div-section-cities {
+        padding: 20px 0px;
+        margin: 0px;
+    }
+
+    .card {
+        width: 90%;
+        transition: 0.3s;
+        box-sizing: border-box;
+        height: 375px;
+    }
+}
+
+@media (max-width: 520px) {
+    header h1 {
+        width: 300px;
+        margin: 0px auto;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .card {
+        height: 340px;
+    }
+} 
+
+@media (max-width: 400px) {
+    .card {
+        height: 315px;
+    }
+}

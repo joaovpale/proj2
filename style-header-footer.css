@@ -1,0 +1,21 @@
+/* Header */
+
+header{
+    color: #ecf0f1;
+    text-align: center;
+    background-color: var(--cor-fundo-azul-escuro);
+    padding: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    padding: 0px 20px;
+}
+
+header button{
+    width: 50px;
+    height: 50px;
+}
+
+/* Footer */
